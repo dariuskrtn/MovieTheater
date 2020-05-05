@@ -4,11 +4,12 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 
 <generatorConfiguration>
+    <classPathEntry location="C:/Users/Darius/Downloads/h2-1.4.195.jar"/>
     <context id="TheaterDB" targetRuntime="MyBatis3Simple">
         <jdbcConnection driverClass="org.h2.Driver"
                         connectionURL="jdbc:h2:~/h2database/TheaterDB;AUTO_SERVER=TRUE"
-                        userId="as"
-                        password="as">
+                        userId="sa"
+                        password="sa">
         </jdbcConnection>
 
         <javaModelGenerator targetPackage="vu.lt.persistence.mybatis.model" targetProject="MAVEN" />
